@@ -1,0 +1,40 @@
+---
+title: "WORKINGS"
+author: "Luc heimans"
+date: "3/10/2021"
+output: html_document
+---
+
+## week 5 - 10/03/2021
+
+## Present 1 constraint
+
+Difference in loading from and loading until: 
+
+```{r}
+cntRawd <- table(Findings$ï..Occurences)
+propRawd <- round(prop.table(cntRawd)*100, digits = 1)
+
+```
+
+
+
+## Present 1 consolidation
+
+```{r message=FALSE, warning=FALSE}
+install.packages("networkD3")
+library(networkD3)
+library(dplyr)
+```
+
+```{r message=FALSE, warning=FALSE}
+loading_place <- unique(X210301_Dataset_v1$`Laad plaats`)
+unloading_place <- unique(X210301_Dataset_v1$`Los plaats`)
+
+```
+
+
+```{r}
+
+```
+
